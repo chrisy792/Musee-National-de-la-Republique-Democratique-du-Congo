@@ -3,100 +3,353 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musée National de la République Démocratique du Congo</title>
+    <title>Musée National – Accueil</title>
 
-    <!-- Lien vers mon fichier CSS -->
+    <!-- Lien vers ton fichier CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Police Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
+
+  
+
+    <!-- En-tête + menu -->
     <header class="main-header">
         <div class="container header-content">
             <div class="logo">
+                <!-- <img src="images/logo-musee.png" alt="Logo du Musée National"> -->
                 <span class="logo-mark">RDC</span>
                 <span class="logo-text">Musée National</span>
             </div>
-
             <nav class="main-nav">
-                <a href="Acceuil.html">Acceuil</a>
-                <a href="Musées.html">Musees</a>
-                <a href="Collections.html">Collections</a>
-                <a href="Expositions.html">Expositions</a>
-                <a href="Education.html">Education</a>
-                <a href="Visite.html">Visite</a>
-                <a href="Actualites.html">Actualites</a>
-                <a href="Contacts.html">Contacts</a>
+                <a href="accueil.html">Accueil</a>
+                <a href="#musee">Le Musée</a>
+                <a href="collections.html">Collections</a>
+                <a href="#expositions">Expositions</a>
+                <a href="#education">Éducation</a>
+                <a href="#visite">Infos pratiques</a>
+                <a href="#actualites">Actualités</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
+         <!-- Barre tout en haut (infos rapides) -->
+    <div class="top-bar">
+        <div class="container">
+            <span> Kinshasa, Kananga, RDC</span>
+            <span> Ouvert du mardi au dimanche : 9h00 – 18h00</span>
+            <span> +243 812 864 639</span>
+        </div>
+    </div>
+    </header>
 
-        <!-- Barre tout en haut (infos rapides) -->
-         <div class="top-bar">
-            <div class="container">
-                <span>Kinshasa, Lubumbashi, Kisangani, Goma / Nord-Kivu, Kananga,</span>
-                <span> +243 812 864 639 </span>
-            </div>
-         </div>
+    <!-- Héros / bannière principale -->
+    <section id="accueil" class="hero">
+        <!-- Image de fond -->
+        <div class="hero-image">
+            <img src="image/1et1.jpg" alt="Vue du musée ou d’une œuvre" class="hero-img">
+        </div>
 
-         <section id="acceuil" class="hero">
-               <!-- Image de fond -->
-                <div class="hero-image">
-                    <img src="image/Page acceuil/1et1.jpg" alt="">
-                </div>
-
-                 <!-- Texte par-dessus l'image -->
-                   <div class="container hero-content">
-                    <div class="hero-text">
-                        <h1>Découvrez l’histoire et le patrimoine de notre nation</h1>
-                        <p>dzddzdz</p>
-                        <div class="hero-buttons">
-                            <a href="Collections.html" class="btn secondary-btn">Voir les collections</a>
-                        </div>
-                    </div>
-                   </div>
-         </section>
-
-         <section id="musee" class="section">
-            <div class="container section-content two-columns">
-                <div>
-                    <h2>Le Musée</h2>
-                    <p>feffef</p>
-                    <ul class="list-check">
-                         <li><a href="Collections permanentes.html">Collections</a></li>
-                         <li><a href="Expositions temporaires.html">Expositions temporaires</a></li>
-                         <li><a href="Visites guidées et ateliers.html">Visites guidées et ateliers</a></li>
-                         <li><a href="Centre de documentation.html">Centre de documentation</a></li>
-                    </ul>
+        <!-- Texte par-dessus l'image -->
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Découvrez l’histoire et le patrimoine de notre nation</h1>
+                <p>
+                    Le Musée National vous invite à un voyage au cœur de la culture, 
+                    de l’art et de la mémoire collective. Explorez nos collections, 
+                    nos expositions temporaires et nos espaces pédagogiques.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#collections" class="btn secondary-btn">Voir les collections</a>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <!-- Section Le Musée -->
+    <section id="musee" class="section">
+        <div class="container section-content two-columns">
+            <div>
+                <h2>Le Musée</h2>
+                <p>
+                   La République Démocratique du Congo possède un patrimoine culturel et historique d’une richesse exceptionnelle, forgé par des siècles d’héritages, de traditions et de civilisations qui ont marqué l’Afrique centrale.
+Ce patrimoine se manifeste à travers des œuvres d’art, des objets symboliques, des sites archéologiques, des récits ancestraux, des instruments de musique, des expressions rituelles et des créations artisanales uniques au monde.
+
+Au-delà de la capitale, les provinces du pays abritent également des espaces culturels majeurs, témoins de la diversité et de la profondeur des identités congolaises.
+Des musées tels que ceux de Lubumbashi, Kisangani, Kananga ou Mbanza-Ngungu jouent un rôle fondamental dans la conservation, la recherche, la valorisation et la transmission de ces trésors. Ils offrent au public — chercheurs, élèves, familles, visiteurs nationaux et internationaux — une immersion authentique dans les arts, les traditions et l’histoire des communautés qui composent la RDC.
+
+Ensemble, ces institutions contribuent à préserver la mémoire collective, à renforcer les identités culturelles et à promouvoir l’image d’un Congo fier de son passé, tourné vers l’avenir et déterminé à transmettre cet héritage aux générations futures.
+                </p>
+                <p>
+                    Dans les autres provinces, des musées comme ceux de Lubumbashi, Kisangani, Kananga ou Mbanza-Ngungu...
+                </p>
+                <ul class="list-check">
+                    <li>Collections permanentes</li>
+                    <li>Expositions temporaires</li>
+                    <li>Visites guidées et ateliers</li>
+                    <li>Centre de documentation</li>
+                </ul>
+            </div>
             <div class="card highlight-card">
                 <div class="card-body">
-                    <h3>Chifre clés</h3>
-                    <p>+ de <strong>5000</strong> Obejet de collection</p>
+                    <h3>Chiffres clés</h3>
+                    <p>+ de <strong>5 000</strong> objets de collection</p>
+                    <p><strong>3</strong> galeries permanentes</p>
+                    <p><strong>10</strong> expositions temporaires par an</p>
+                    <p><strong>20 000</strong> visiteurs annuels</p>
                 </div>
             </div>
-         </section>
+        </div>
+    </section>
 
-         <section id="collections" class="section section-gray">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Collections</h2>
-                    <p>Un aperçu de nos principales collections permanentes.</p>
+    <!-- Collections -->
+    <section id="collections" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Collections</h2>
+                <p>Un aperçu de nos principales collections permanentes.</p>
+            </div>
+            <div class="grid cards-3">
+                <article class="card">
+                    <div class="card-img-placeholder">
+                        <img src="image/5.jpg" alt="Arts traditionnels" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Arts traditionnels</h3>
+                        <p>
+                            Masques, sculptures, objets rituels retraçant les traditions 
+                            des différentes régions du pays.
+                        </p>
+                        <a href="#" class="card-link">Découvrir la collection</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img-placeholder">
+                        <img src="image/7.jpg" alt="Histoire et société" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Histoire &amp; société</h3>
+                        <p>
+                            Documents, photos et objets illustrant les grandes périodes 
+                            politiques, sociales et économiques.
+                        </p>
+                        <a href="#" class="card-link">Découvrir la collection</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img-placeholder">
+                        <img src="image/8.jpg" alt="Art contemporain" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Art contemporain</h3>
+                        <p>
+                            Œuvres d’artistes contemporains mettant en lumière la créativité 
+                            actuelle du pays.
+                        </p>
+                        <a href="#" class="card-link">Découvrir la collection</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expositions -->
+    <section id="expositions" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Expositions</h2>
+                <p>Ne manquez pas nos expositions temporaires en cours.</p>
+            </div>
+            <div class="grid cards-2">
+                <article class="card">
+                    <div class="card-img-placeholder">
+                        <img src="image/9.jpg" alt="Exposition Trésors de la mémoire" class="card-img">
+                    </div>
+                    <div class="card-tag">En cours</div>
+                    <div class="card-body">
+                        <h3>Trésors de la mémoire</h3>
+                        <p class="card-meta">Du 5 octobre 2025 au 15 janvier 2036</p>
+                        <p>
+                            Une immersion dans les objets symboliques qui ont marqué 
+                            l’histoire de notre pays.
+                        </p>
+                        <a href="#" class="card-link">En savoir plus</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img-placeholder">
+                        <img src="image/10.jpg" alt="Exposition Regards d’artistes" class="card-img">
+                    </div>
+                    <div class="card-tag card-tag-soon">À venir</div>
+                    <div class="card-body">
+                        <h3>Regards d’artistes</h3>
+                        <p class="card-meta">À partir de mars 2026</p>
+                        <p>
+                            Une exposition collective d’artistes contemporains, entre 
+                            tradition et modernité.
+                        </p>
+                        <a href="#" class="card-link">Découvrir le programme</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Éducation -->
+    <section id="education" class="section section-gray">
+        <div class="container section-content two-columns">
+            <div>
+                <h2>Éducation &amp; médiation</h2>
+                <p>
+                    Le musée développe de nombreux outils pédagogiques pour les écoles, 
+                    les étudiants et le grand public.
+                </p>
+                <p>
+                    Notre équipe de médiation accompagne les enseignants dans la préparation 
+                    et le suivi des visites.
+                </p>
+            </div>
+            <div class="card">
+                <div class="card-img-placeholder">
+                    <img src="image/4.jpg" alt="Ateliers éducatifs" class="card-img">
                 </div>
-                <div class="grid card-3">
-                    <article class="card">
-                        <div class="card-img-placeholder">
-                            <img src="" alt="">
-                        </div>
-                    </article>
+                <div class="card-body">
+                    <h3>Pour qui ?</h3>
+                    <ul class="list-check">
+                        <li>Écoles primaires et secondaires</li>
+                        <li>Universités et instituts supérieurs</li>
+                        <li>Familles et groupes</li>
+                        <li>Visites inclusives (public spécifique)</li>
+                    </ul>
+                    <a href="#" class="btn primary-btn">Demander une visite scolaire</a>
                 </div>
             </div>
-         </section>
-    </header>
+        </div>
+    </section>
+
+    <!-- Visite -->
+    <section id="visite" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Préparer votre visite</h2>
+                <p>Toutes les informations essentielles pour venir au musée.</p>
+            </div>
+            <div class="grid cards-3">
+                <div class="card">
+                    <div class="card-img-placeholder">
+                        <img src="image/11.jpg" alt="Horaires du musée" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Horaires</h3>
+                        <p>Mardi – Dimanche : 9h00 – 18h00</p>
+                        <p>Lundi : fermé</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder">
+                        <img src="image/12.jpg" alt="Tarifs du musée" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Tickets</h3>
+                        <p>Adulte : 5 000 FC</p>
+                        <p>Étudiant : 3 000 FC</p>
+                        <p>Scolaires (groupe) : sur demande</p>
+                        <div class="hero-buttons">
+                            <a href="#visite" class="btn primary-btn">Préparer ma visite</a>
+                         
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-placeholder">
+                        <img src="image/13.jpg" alt="Accès au musée" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Accès</h3>
+                        <p>Adresse : Avenue Exemple, Kinshasa</p>
+                        <p>Parking visiteurs disponible</p>
+                        <p>Transports : taxi, bus, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actualités -->
+    <section id="actualites" class="section section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2>Actualités</h2>
+                <p>Suivez la vie du musée et nos événements.</p>
+            </div>
+            <div class="grid cards-3">
+                <article class="card">
+                    <div class="card-img-placeholder">
+                        <img src="image/14.jpg" alt="Nouvelle salle d’art contemporain" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-meta">Publié le 20 novembre 2025</p>
+                        <h3>Nouvelle salle dédiée à l’art contemporain</h3>
+                        <p>Découvrez notre nouvel espace entièrement consacré aux artistes émergents.</p>
+                        <a href="#" class="card-link">Lire l’actualité</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img-placeholder">
+                        <img src="image/15.jpg" alt="Programme des visites guidées" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-meta">Publié le 5 novembre 2025</p>
+                        <h3>Programme des visites guidées de décembre</h3>
+                        <p>Réservez dès maintenant vos visites guidées thématiques.</p>
+                        <a href="#" class="card-link">Voir le programme</a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-img-placeholder">
+                        <img src="image/16.jpg" alt="Ateliers pour enfants" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-meta">Publié le 30 octobre 2025</p>
+                        <h3>Ateliers pour enfants pendant les vacances</h3>
+                        <p>Des activités ludiques pour découvrir le patrimoine en famille.</p>
+                        <a href="#" class="card-link">En savoir plus</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="main-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Musée National</h3>
+                <p>Adresse : Avenue Exemple, Kinshasa, RDC</p>
+                <p>Téléphone : +243 000 000 000</p>
+                <p>Email : contact@museenational.cd</p>
+            </div>
+            <div>
+                <h3>Horaires d’ouverture</h3>
+                <p>Mardi – Dimanche : 9h00 – 18h00</p>
+                <p>Lundi : fermé</p>
+            </div>
+            <div>
+                <h3>Suivez-nous</h3>
+                <p>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">YouTube</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Musée National – Tous droits réservés.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
