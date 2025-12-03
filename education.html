@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musée National – Expositions</title>
+    <title>Musée National – Education</title>
 
     <!-- Lien vers mon fichier CSS -->
      <link rel="stylesheet" href="style.css">
+
+        <!-- Police Google (optionnel) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Police Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,20 +39,312 @@
                 <a href="education.html">Éducation</a>
                 <a href="visite.html">Infos pratiques</a>
                 <a href="actualites.html">Actualités</a>
-                <a href="Demande de Reservation">Reser</a>
+                <a href="Demande de reservation.html">Reser</a>
+                
             </nav>
         </div>
          <!-- Barre tout en haut (infos rapides) -->
     <div class="top-bar">
         <div class="container">
-            <span>📍Kinshasa, Lubumbashi, Goma, Kisangani, Kananga</span>
+            <span> 📍Kinshasa, Lubumbashi, Goma, Kisangani, Kananga</span>
             <span> Ouvert du mardi au dimanche : 9h00 – 18h00</span>
             <span> +243 812 864 639</span>
         </div>
     </div>
-    </header>
+
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musée National – Éducation</title>
+
+    <!-- Police Google (optionnel) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Ton fichier CSS principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    
+
+
+    <!-- ====== HERO ÉDUCATION ====== -->
+    <section class="hero-education">
+        <div class="container hero-education-content">
+            <div class="hero-education-text">
+                <h1>Éducation & Médiation culturelle</h1>
+                <p>
+                    La section Éducation du Musée National accompagne écoles, universités, familles et groupes 
+                    dans la découverte du patrimoine culturel et historique de la République Démocratique du Congo.
+                </p>
+                <p class="hero-education-sub">
+                    Visites guidées, ateliers pratiques, ressources pédagogiques : 
+                    le musée devient une véritable salle de classe vivante.
+                </p>
+                <a href="#reservation" class="btn-primary">Organiser une visite scolaire</a>
+            </div>
+            <div class="hero-education-image">
+                <!-- Remplace cette image par la tienne -->
+                <div class="hero-education-img-placeholder">
+                    <span>Image : Élèves en visite au musée</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PROGRAMMES SCOLAIRES ====== -->
+    <section class="section-education" id="programmes-scolaires">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Programmes scolaires</h2>
+                <p>
+                    Des parcours adaptés pour chaque niveau, afin d’aider les élèves à comprendre l’histoire, 
+                    les cultures et les objets symboliques de la RDC.
+                </p>
+            </div>
+
+            <div class="edu-grid-3">
+                <article class="edu-card">
+                    <h3>Écoles primaires</h3>
+                    <p>
+                        Visites ludiques et interactives, adaptées aux plus jeunes. 
+                        Découverte des objets, contes, jeux d’observation et ateliers créatifs.
+                    </p>
+                    <ul>
+                        <li>Parcours “Découverte du patrimoine”</li>
+                        <li>Ateliers dessin & coloriage</li>
+                        <li>Jeux-questionnaires</li>
+                    </ul>
+                </article>
+
+                <article class="edu-card">
+                    <h3>Écoles secondaires</h3>
+                    <p>
+                        Programmes renforçant les cours d’histoire, d’arts et de sciences sociales 
+                        grâce à des exemples concrets tirés des collections.
+                    </p>
+                    <ul>
+                        <li>Visites thématiques (royaumes, indépendance…)</li>
+                        <li>Analyse d’objets & documents</li>
+                        <li>Projets de recherche encadrés</li>
+                    </ul>
+                </article>
+
+                <article class="edu-card">
+                    <h3>Universités & instituts</h3>
+                    <p>
+                        Visites spécialisées et rencontres avec les conservateurs, 
+                        adaptées aux filières d’histoire, anthropologie, archéologie, art, etc.
+                    </p>
+                    <ul>
+                        <li>Visites guidées approfondies</li>
+                        <li>Rencontres avec les experts du musée</li>
+                        <li>Accès à certaines ressources documentaires</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ATELIERS & ACTIVITÉS ====== -->
+    <section class="section-education section-alt" id="ateliers">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Ateliers & activités pédagogiques</h2>
+                <p>
+                    Apprendre en faisant : des ateliers pratiques pour découvrir les savoir-faire, 
+                    les arts et les traditions de la RDC.
+                </p>
+            </div>
+
+            <div class="edu-grid-4">
+                <article class="edu-card-mini">
+                    <div class="edu-card-mini-img">
+                        <!-- Image atelier masques -->
+                        <span>Image atelier masques</span>
+                    </div>
+                    <h3>Atelier masques & symboles</h3>
+                    <p>
+                        Comprendre la signification des masques traditionnels, puis créer 
+                        son propre masque inspiré des cultures congolaises.
+                    </p>
+                </article>
+
+                <article class="edu-card-mini">
+                    <div class="edu-card-mini-img">
+                        <span>Image atelier peinture</span>
+                    </div>
+                    <h3>Atelier arts visuels</h3>
+                    <p>
+                        Initiation à la peinture et au dessin inspirés des motifs traditionnels 
+                        et de l’art contemporain africain.
+                    </p>
+                </article>
+
+                <article class="edu-card-mini">
+                    <div class="edu-card-mini-img">
+                        <span>Image atelier musique</span>
+                    </div>
+                    <h3>Atelier musique & rythmes</h3>
+                    <p>
+                        Découverte des instruments traditionnels, initiation aux rythmes 
+                        et aux chants issus des différentes régions du pays.
+                    </p>
+                </article>
+
+                <article class="edu-card-mini">
+                    <div class="edu-card-mini-img">
+                        <span>Image atelier archéologie</span>
+                    </div>
+                    <h3>Atelier archéologie</h3>
+                    <p>
+                        Simulation de fouilles, observation d’objets et introduction à 
+                        la méthode scientifique de l’archéologue.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== RESSOURCES PÉDAGOGIQUES ====== -->
+    <section class="section-education" id="ressources">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Ressources pédagogiques</h2>
+                <p>
+                    Le musée met à disposition des ressources pour préparer ou prolonger 
+                    la visite en classe ou à la maison.
+                </p>
+            </div>
+
+            <div class="edu-resources">
+                <div class="edu-resources-text">
+                    <ul>
+                        <li>Fiches pédagogiques sur les objets majeurs du musée</li>
+                        <li>Frises chronologiques de l’histoire de la RDC</li>
+                        <li>Guides pour les enseignants</li>
+                        <li>Supports d’activités à imprimer (jeux, quiz, parcours)</li>
+                        <li>Capsules vidéo & capsules audio (à venir)</li>
+                    </ul>
+                    <p class="note">
+                        Certaines ressources seront prochainement disponibles en téléchargement 
+                        direct sur le site.
+                    </p>
+                </div>
+
+                <div class="edu-resources-boxes">
+                    <div class="resource-box">
+                        <h3>Dossiers enseignants</h3>
+                        <p>Documents pour préparer la visite avec la classe, avec pistes pédagogiques et activités.</p>
+                        <a href="#" class="link-soft">Télécharger un exemple (PDF)</a>
+                    </div>
+                    <div class="resource-box">
+                        <h3>Parcours thématiques</h3>
+                        <p>Parcours clé en main autour d’un thème : royaumes, indépendance, arts traditionnels…</p>
+                        <a href="#" class="link-soft">Voir les thèmes disponibles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== VISITES GUIDÉES & RÉSERVATION ====== -->
+    <section class="section-education section-alt" id="reservation">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Visites guidées & réservations</h2>
+                <p>
+                    Vous souhaitez organiser une visite scolaire, une sortie éducative ou une activité en groupe ? 
+                    Remplissez le formulaire ci-dessous, notre équipe vous contactera pour finaliser les détails.
+                </p>
+            </div>
+
+            <div class="edu-reservation-grid">
+                <div class="reservation-info">
+                    <h3>Informations pratiques</h3>
+                    <ul>
+                        <li>Groupes scolaires, universitaires, associations, familles…</li>
+                        <li>Visites disponibles du mardi au samedi (horaires à préciser par le musée).</li>
+                        <li>Durée moyenne d’une visite : 1h à 1h30.</li>
+                        <li>Possibilité de combiner visite + atelier pédagogique.</li>
+                    </ul>
+                    <p class="note">
+                        Les conditions, tarifs éventuels et modalités d’accès peuvent varier. 
+                        Le musée confirme chaque réservation par e-mail ou téléphone.
+                    </p>
+                </div>
+
+                <form class="reservation-form">
+                    <h3>Demande de réservation</h3>
+
+                    <div class="form-row">
+                        <label for="type-groupe">Type de groupe</label>
+                        <select id="type-groupe" name="type_groupe">
+                            <option value="">Choisir…</option>
+                            <option>École primaire</option>
+                            <option>École secondaire</option>
+                            <option>Université / Institut supérieur</option>
+                            <option>Famille / Groupe privé</option>
+                            <option>Association / Organisation</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="niveau">Niveau / Classe</label>
+                        <input type="text" id="niveau" name="niveau" placeholder="Ex : 6e primaire, 3e secondaire, L2 histoire…">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="nombre">Nombre approximatif de participants</label>
+                        <input type="number" id="nombre" name="nombre" placeholder="Ex : 25">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="date">Date souhaitée</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="programme">Programme souhaité</label>
+                        <select id="programme" name="programme">
+                            <option value="">Choisir…</option>
+                            <option>Visite générale du musée</option>
+                            <option>Visite thématique (royaumes anciens)</option>
+                            <option>Visite + atelier masques</option>
+                            <option>Visite + atelier arts visuels</option>
+                            <option>Visite + atelier musique</option>
+                            <option>Programme personnalisé</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="contact">Nom de la personne de contact</label>
+                        <input type="text" id="contact" name="contact" placeholder="Nom & prénom">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="exemple@ecole.cd">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="Ex : +243…">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Informations complémentaires</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Précisez vos besoins, l’âge des participants, la langue souhaitée, etc."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Envoyer la demande</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer / Contact -->
     <footer id="contact" class="main-footer">
         <div class="container footer-grid">
@@ -75,5 +372,8 @@
             <p>© 2025 Musée National – Tous droits réservés.</p>
         </div>
     </footer>
+
 </body>
 </html>
+
+    </header>
