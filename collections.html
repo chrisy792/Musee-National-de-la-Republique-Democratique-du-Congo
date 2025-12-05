@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Collections – Musée National</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-- En-tête + menu -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <!-- <img src="images/logo-musee.png" alt="Logo du Musée National"> -->
+                <span class="logo-mark">RDC
+                </span>
+                <span class="logo-text">Musée National</span>
+            </div>
+
+            <nav class="main-nav">
+                <a href="Index.html">Accueil</a>
+                <a href="musee.html">Le Musée</a>
+                <a href="collections.html">Collections</a>
+                <a href="expositions.html">Expositions</a>
+                <a href="education.html">Éducation</a>
+                <a href="visite.html">visite</a>
+                <a href="actualites.html">Actualités</a>
+                <a href="ticket.html">ticket</a>
+                
+            </nav>
+        </div>
+         <!-- Barre tout en haut (infos rapides) -->
+    <div class="top-bar">
+        <div class="container">
+            <span> 📍Kinshasa, Lubumbashi, Kananga</span>
+            <span> Ouvert du mardi au dimanche : 9h00 – 18h00</span>
+            <span> +243 812 864 639</span>
+        </div>
+    </div>
+    </header>
+    <section class="hero-collections">
+        <div class="container hero-grid">
+            <div>
+                <div class="hero-title">Les grandes collections du musée</div>
+                <p class="hero-subtitle">
+                    Plongez au cœur du patrimoine de la République Démocratique du Congo : masques, sculptures,
+                    textiles, archives et objets du quotidien racontent l’histoire des peuples, des royaumes
+                    et des grandes villes du pays.
+                </p>
+
+                <div class="hero-badges">
+                    <span class="badge">Arts traditionnels</span>
+                    <span class="badge">Histoire & mémoire</span>
+                    <span class="badge">Archéologie</span>
+                    <span class="badge">Ethnographie</span>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <div class="hero-stat-number">+3 500</div>
+                        <div class="hero-stat-label">Objets inventoriés</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-number">26</div>
+                        <div class="hero-stat-label">Provinces représentées</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-number">XIXe – XXIe</div>
+                        <div class="hero-stat-label">Périodes couvertes</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-box">
+                <div class="hero-image-tag">Une partie des collections permanentes</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= BARRE OUTILS ================= -->
+    <section class="toolbar">
+        <div class="container toolbar-grid">
+            <div class="toolbar-left">
+                <span class="toolbar-label">Filtrer par :</span>
+
+                <select class="select-input">
+                    <option>Type d’objet</option>
+                    <option>Masques</option>
+                    <option>Sculptures</option>
+                    <option>Textiles</option>
+                    <option>Instruments de musique</option>
+                </select>
+
+                <select class="select-input">
+                    <option>Région / Province</option>
+                    <option>Kinshasa</option>
+                    <option>Kasaï</option>
+                    <option>Katanga</option>
+                    <option>Équateur</option>
+                </select>
+            </div>
+
+            <div class="toolbar-left">
+                <input type="text" class="search-input" placeholder="Rechercher une collection (ex : Masques Pende)">
+            </div>
+
+            <div class="toolbar-right">
+                Affichage de <strong>8</strong> collections sur <strong>24</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= COLLECTIONS ================= -->
+    <section class="collections-section">
+        <div class="container">
+            <h2 class="section-title">Découvrez nos collections majeures</h2>
+            <p class="section-subtitle">
+                Chaque collection rassemble des pièces emblématiques, étudiées et restaurées, pour offrir 
+                aux visiteurs un regard vivant sur la diversité culturelle de la RDC.
+            </p>
+
+            <!-- Filtres rapides -->
+            <div class="chips-row">
+                <button class="chip active">Toutes les collections</button>
+                <button class="chip">Masques & figures</button>
+                <button class="chip">Royaumes & chefferies</button>
+                <button class="chip">Art urbain</button>
+                <button class="chip">Objets de culte</button>
+                <button class="chip">Photographies & archives</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="collections-grid">
+
+                <!-- CARD 1 -->
+                <article class="collection-card">
+                    <div class="collection-image" style="background-image:url('https://images.pexels.com/photos/2168836/pexels-photo-2168836.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+                    <div class="collection-content">
+                        <div class="collection-tag">Arts traditionnels · Masques</div>
+                        <h3 class="collection-title">Masques Pende et Chokwe</h3>
+                        <p class="collection-meta">Régions : Kwilu, Kasai | Période : XIXe – XXe siècle</p>
+                        <p class="collection-desc">
+                            Une sélection de masques cérémoniels utilisés lors des rites d’initiation, 
+                            de célébration et de justice coutumière, témoignant de la richesse symbolique 
+                            des peuples Pende et Chokwe.
+                        </p>
+                        <div class="collection-footer">
+                            <a href="#" class="btn-link">Voir la collection</a>
+                            <span class="badge-small">+120 pièces</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 2 -->
+                <article class="collection-card">
+                    <div class="collection-image" style="background-image:url('https://images.pexels.com/photos/3829441/pexels-photo-3829441.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+                    <div class="collection-content">
+                        <div class="collection-tag">Histoire · Royaumes</div>
+                        <h3 class="collection-title">Royaume Luba & héritages royaux</h3>
+                        <p class="collection-meta">Régions : Katanga | Période : XVIIIe – XXe siècle</p>
+                        <p class="collection-desc">
+                            Trônes, sceptres, appuie-nuques, statuettes mémorielles… Autant d’objets 
+                            qui racontent l’organisation politique, la mémoire et la transmission du pouvoir 
+                            au sein du royaume Luba.
+                        </p>
+                        <div class="collection-footer">
+                            <a href="#" class="btn-link">Voir la collection</a>
+                            <span class="badge-small">+80 pièces</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 3 -->
+                <article class="collection-card">
+                    <div class="collection-image" style="background-image:url('https://images.pexels.com/photos/7977970/pexels-photo-7977970.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+                    <div class="collection-content">
+                        <div class="collection-tag">Ethnographie · Quotidien</div>
+                        <h3 class="collection-title">Objets de la vie quotidienne</h3>
+                        <p class="collection-meta">RDC entière | Période : XXe – XXIe siècle</p>
+                        <p class="collection-desc">
+                            Ustensiles, paniers, outils agricoles, parures… Une plongée dans la créativité 
+                            du quotidien congolais, entre savoir-faire ancien et innovations locales.
+                        </p>
+                        <div class="collection-footer">
+                            <a href="#" class="btn-link">Voir la collection</a>
+                            <span class="badge-small">+200 pièces</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 4 -->
+                <article class="collection-card">
+                    <div class="collection-image" style="background-image:url('https://images.pexels.com/photos/843149/pexels-photo-843149.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+                    <div class="collection-content">
+                        <div class="collection-tag">Archéologie</div>
+                        <h3 class="collection-title">Trésors archéologiques de la vallée du Congo</h3>
+                        <p class="collection-meta">Régions : Vallée du Congo | Période : I – XVe siècle</p>
+                        <p class="collection-desc">
+                            Céramiques, fragments de bracelets, outils en métal et en pierre qui 
+                            témoignent des premiers échanges commerciaux et des occupations anciennes du territoire.
+                        </p>
+                        <div class="collection-footer">
+                            <a href="#" class="btn-link">Voir la collection</a>
+                            <span class="badge-small">+60 pièces</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 5 -->
+                <article class="collection-card">
+                    <div class="collection-image" style="background-image:url('https://images.pexels.com/photos/3738052/pexels-photo-3738052.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+                    <div class="collection-content">
+                        <div class="collection-tag">Musique & oralité</div>
+                        <h3 class="collection-title">Instruments et chants ancestraux</h3>
+                        <p class="collection-meta">RDC entière | Période : XIXe – XXe siècle</p>
+                        <p class="collection-desc">
+                            Tambours, sanza, harpes, flûtes et autres instruments utilisés lors des cérémonies, 
+                            danses et récits oraux, au cœur de la transmission des traditions.
+                        </p>
+                        <div class="collection-footer">
+                            <a href="#" class="btn-link">Voir la collection</a>
+                            <span class="badge-small">+90 pièces</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 6 -->
+                <article class="collection-card">
+                    <div class="collection-image" style="background-image:url('https://images.pexels.com/photos/2871750/pexels-photo-2871750.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+                    <div class="collection-content">
+                        <div class="collection-tag">Photographies & archives</div>
+                        <h3 class="collection-title">Kinshasa, mémoire d’une capitale</h3>
+                        <p class="collection-meta">Kinshasa | Période : 1920 – 2000</p>
+                        <p class="collection-desc">
+                            Une sélection de photographies, affiches et documents retraçant l’évolution 
+                            de Léopoldville à Kinshasa, entre urbanisation, mouvements culturels et vie quotidienne.
+                        </p>
+                        <div class="collection-footer">
+                            <a href="#" class="btn-link">Voir la collection</a>
+                            <span class="badge-small">+150 archives</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 7 -->
+                <article class="collection-card">
+                    <div class="collection-image" style="background-image:url('https://images.pexels.com/photos/3568221/pexels-photo-3568221.jpeg?auto=compress&cs=tinysrgb&w=800');"></div>
+                    <div class="collection-content">
+                        <div class="collection-tag">Textiles & parures</div>
+                        <h3 class="collection-title">Raffia, perles et pagnes d’apparat</h3>
+                        <p class="collection-meta">Kongo Central, Kasaï, Équateur | Période : XIXe – XXe siècle</p>
+                        <p class="collection-desc">
+                            Costumes de prestige, pagnes, coiffes et colliers qui illustrent le statut social, 
+                            la beauté et l’identité des différents peuples de la RDC.
+                        </p>
+                        <div class="collection-footer">
+                            <a href="#" class="btn-link">Voir la collection</a>
+                            <span class="badge-small">+70 pièces</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CARD 8 -->
+                <article class="collection-card">
+                    <img src="image/1.png" alt="">
+                    <div class="collection-content">
+                        <div class="collection-tag">Art contemporain</div>
+                        <h3 class="collection-title">Créations urbaines & nouvelles écritures</h3>
+                        <p class="collection-meta">Kinshasa, Lubumbashi | Période : XXe – XXIe siècle</p>
+                        <p class="collection-desc">
+                            Peintures, installations et sculptures d’artistes contemporains qui dialoguent 
+                            avec l’histoire, la ville, la spiritualité et les enjeux actuels de la société congolaise.
+                        </p>
+                        <div class="collection-footer">
+                            <a href="#" class="btn-link">Voir la collection</a>
+                            <span class="badge-small">+40 œuvres</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="main-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Musée National</h3>
+                <p>Adresse : Avenue Exemple, Kinshasa, RDC</p>
+                <p>Téléphone : +243 000 000 000</p>
+                <p>Email : contact@museenational.cd</p>
+            </div>
+            <div>
+                <h3>Horaires d’ouverture</h3>
+                <p>Mardi – Dimanche : 9h00 – 18h00</p>
+                <p>Lundi : fermé</p>
+            </div>
+            <div>
+                <h3>Suivez-nous</h3>
+                <p>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">YouTube</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Musée National – Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
