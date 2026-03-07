@@ -1,73 +1,228 @@
-<!DOCTYPE html>
+
+
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Collections – Musée National</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Collections | Musée</title>
 
-    <link rel="stylesheet" href="style.css">
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --panel:#101826;
+      --text:#eaf0ff;
+      --muted:#b7c3dd;
+      --line:#eaf0ff ;
+      --accent:#7c5cff;
+
+      --radius:18px;
+      --shadow:0 14px 35px rgba(0,0,0,.35);
+      --container:1180px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,Segoe UI,Roboto,Arial;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+
+    a{text-decoration:none;color:inherit}
+    .container{max-width:var(--container);margin:0 auto;padding:0 18px}
+
+    /* NAV */
+    .nav{
+      position:sticky;
+      top:0;
+      z-index:50;
+      backdrop-filter:blur(12px);
+      background:rgba(11,15,20,.7);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-in{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:14px 0;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:800;
+    }
+    .logo{
+      width:38px;
+      height:38px;
+      border-radius:12px;
+      background:linear-gradient(135deg,#7c5cff,#22c55e);
+    }
+    .nav-actions{
+      display:flex;
+      gap:10px;
+    }
+
+    .btn{
+      padding:10px 16px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.06);
+      font-weight:600;
+      cursor:pointer;
+    }
+    .btn.primary{
+      background:linear-gradient(135deg,#7c5cff,#5b4bdb);
+      border:none;
+    }
+
+    /* HERO */
+    .hero{padding:40px 0}
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:20px;
+    }
+    .hero-card{
+      background:var(--panel);
+      border-radius:var(--radius);
+      border:1px solid var(--line);
+      padding:26px;
+      box-shadow:var(--shadow);
+    }
+    h1{
+      font-size:clamp(28px,3vw,42px);
+      margin:12px 0;
+    }
+    .hero-card p{color:var(--muted)}
+
+    .hero-media img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:var(--radius);
+    }
+
+    /* SECTIONS */
+    section{padding:26px 0}
+    .section-head{
+      margin-bottom:14px;
+    }
+    .section-head h2{margin:0}
+    .section-head p{color:var(--muted)}
+
+    /* GRID */
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+    .card{
+      background:rgba(16,24,38,.7);
+      border-radius:var(--radius);
+      border:1px solid var(--line);
+      padding:16px;
+    }
+
+    .card img{
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      border-radius:12px;
+      margin-bottom:10px;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:900px){
+      .hero-grid{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:520px){
+      .grid-3{grid-template-columns:1fr}
+    }
+  </style>
 </head>
+
 <body>
 
-     <!-- En-tête + menu -->
-    <header class="main-header">
-        <div class="container header-content">
-            <div class="logo">
-                <!-- <img src="images/logo-musee.png" alt="Logo du Musée National"> -->
-                <span class="logo-mark">RDC
-                </span>
-                <span class="logo-text">Musée National</span>
-            </div>
-
-            <nav class="main-nav">
-                <a href="Index.html">Accueil</a>
-                <a href="musee.html">Le Musée</a>
-                <a href="collections.html">Collections</a>
-                <a href="expositions.html">Expositions</a>
-                <a href="education.html">Éducation</a>
-                <a href="visite.html">visite</a>
-                <a href="actualites.html">Actualités</a>
-                <a href="ticket.html">ticket</a>
-                
-            </nav>
-        </div>
-         <!-- Barre tout en haut (infos rapides) -->
-    <div class="top-bar">
-        <div class="container">
-            <span> 📍Kinshasa, Lubumbashi, Kananga</span>
-            <span> Ouvert du mardi au dimanche : 9h00 – 18h00</span>
-            <span> +243 812 864 639</span>
-        </div>
+<!-- NAV -->
+<div class="nav">
+  <div class="container nav-in">
+    <div class="brand">
+      <div class="logo"></div>
+      <div>
+        <div>Musée</div>
+        <small style="color:var(--muted)">Collections</small>
+      </div>
     </div>
-    </header>
-    
 
-    <!-- Footer / Contact -->
-    <footer id="contact" class="main-footer">
-        <div class="container footer-grid">
-            <div>
-                <h3>Musée National</h3>
-                <p>Adresse : Avenue Exemple, Kinshasa, RDC</p>
-                <p>Téléphone : +243 000 000 000</p>
-                <p>Email : contact@museenational.cd</p>
-            </div>
-            <div>
-                <h3>Horaires d’ouverture</h3>
-                <p>Mardi – Dimanche : 9h00 – 18h00</p>
-                <p>Lundi : fermé</p>
-            </div>
-            <div>
-                <h3>Suivez-nous</h3>
-                <p>
-                    <a href="#">Facebook</a><br>
-                    <a href="#">Instagram</a><br>
-                    <a href="#">YouTube</a>
-                </p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2025 Musée National – Tous droits réservés.</p>
-        </div>
-    </footer>
+    <div class="nav-actions">
+      <span class="btn">Explorer</span>
+      <span class="btn primary">Planifier une visite</span>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container hero-grid">
+    <div class="hero-card">
+      <h1>Collections du Musée</h1>
+      <p>
+        Découvrez les objets majeurs conservés par le musée.
+        Chaque pièce est documentée pour préserver la mémoire
+        et transmettre le savoir.
+      </p>
+    </div>
+
+    <div class="hero-card hero-media">
+      <img src="images/hero.jpg" alt="Vue du musée">
+    </div>
+  </div>
+</header>
+
+<!-- CATEGORIES -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>Catégories principales</h2>
+      <p>Organisation claire et pédagogique des collections.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">Objets historiques</div>
+      <div class="card">Arts & artisanat</div>
+      <div class="card">Archives & manuscrits</div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJETS -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>Objets exposés</h2>
+      <p>Sélection d’objets représentatifs.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <img src="images/obj1.jpg" alt="">
+        <strong>Objet 1</strong>
+      </div>
+      <div class="card">
+        <img src="images/obj2.jpg" alt="">
+        <strong>Objet 2</strong>
+      </div>
+      <div class="card">
+        <img src="images/obj3.jpg" alt="">
+        <strong>Objet 3</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
